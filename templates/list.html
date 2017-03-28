@@ -1,0 +1,75 @@
+<ion-view view-title="列表" ng-controller="listController">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-side-menus>
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-dark">
+                <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+            </ion-nav-bar>
+            <ion-nav-view name="menuContent" animation="slide-left-right">
+                <ion-content class="padding has-header">
+                    <div class="bar bar-header item-input-inset">
+                        <label class="item-input-wrapper">
+                            <i class="icon ion-ios-search placeholder-icon"></i>
+                            <input type="search" ng-focous="action" placeholder="搜索">
+                        </label>
+                        <button class="button button-clear">
+                            取消
+                        </button>
+                    </div>
+                    <ion-list>
+                        <ion-item class="item item-icon-right itemBox" ng-click="drugInfo()">
+                            <div class="row responsive-break">
+                                <div class="col col-20">
+                                    <img src="images/2ae50367-bea7-4d13-924d-49df37b7b2fe.jpg" class="col"/>
+                                </div>
+                                <div class="col col-50 drugInfo">
+                                    <div>药名</div>
+                                    <div>药厂</div>
+                                </div>
+                                <div class="col col-10 drugPrice">
+                                    ￥11
+                                </div>
+                            </div>
+                            <i class="icon ion-ios-more"></i>
+                        </ion-item>
+                        <ion-item class="item item-icon-right itemBox">
+                            <div class="row responsive-break">
+                                <div class="col col-20">
+                                    <img src="images/2ae50367-bea7-4d13-924d-49df37b7b2fe.jpg" class="col"/>
+                                </div>
+                                <div class="col col-50 drugInfo">
+                                    <div>药名</div>
+                                    <div>药厂</div>
+                                </div>
+                                <div class="col col-10 drugPrice">
+                                    ￥11
+                                </div>
+                            </div>
+                            <i class="icon ion-ios-more"></i>
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-nav-view>
+        </ion-side-menu-content>
+        <ion-side-menu side="left">
+            <header class="bar bar-header bar-dark">
+                <h1 class="title">分类</h1>
+            </header>
+            <ion-content class="has-header">
+                <ion-list>
+                    <ion-item nav-clear menu-close href="#">
+                        中
+                    </ion-item>
+                    <ion-item nav-clear menu-close href="#">
+                        西
+                    </ion-item>
+                    <ion-item nav-clear menu-close href="#">
+                        。
+                    </ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-side-menu>
+    </ion-side-menus>
+</ion-view>

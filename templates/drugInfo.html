@@ -1,0 +1,53 @@
+<ion-view title="详细信息" ng-controller="drugInfoCtrl">
+    <ion-content>
+
+        <ion-slide-box class="drugSlide" active-slide="0" does-continue="true">
+            <ion-slide>
+                    <img class="col-60" src="images/2927bf32-6714-4336-af72-c7f9b34f3c69.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img class="col-60" src="images/2ae50367-bea7-4d13-924d-49df37b7b2fe.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img class="col-60" src="images/339f48e3-326d-4bb5-b50c-314760682fb9.jpg">
+            </ion-slide>
+        </ion-slide-box>
+        <ion-list>
+            <ion-item class="item-divider">
+                药品信息
+            </ion-item>
+            <ion-item class="item-body">
+                <h2>药名</h2>
+                <p>价格 <span>原价</span></p>
+                <p>药厂</p>
+                <p>经销商</p>
+
+            </ion-item>
+            <ion-item class="item-divider">
+                药品说明
+            </ion-item>
+
+        </ion-list>
+        <ion-item class="item-body">
+            <div class="col">
+                <img class="col-40" src="images/2927bf32-6714-4336-af72-c7f9b34f3c69.jpg">
+            </div>
+            <div class="drugIntro">
+                <p><b>药品成分：</b><label></label></p>
+                <p><b>药品性状：</b><label></label></p>
+                <p><b>药品适应症：</b><label></label></p>
+                <p><b>药品用法用量：</b><label></label></p>
+                <p><b>药品反应：</b><label></label></p>
+                <p><b>药品禁忌：</b><label></label></p>
+                <p><b>注意事项：</b><label></label></p>
+            </div>
+
+        </ion-item>
+    </ion-content>
+    <div class="plyBtn">
+        订购数量：<button class="btn">-</button><input type="number" placeholder="1"/><button class="btn">+</button>
+    </div>
+    <div class="plyBtn ply" ng-click="confirm()">
+        立即预定
+    </div>
+</ion-view>

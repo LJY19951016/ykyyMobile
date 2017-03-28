@@ -1,0 +1,52 @@
+<ion-view view-title="所有订单" ng-controller="orderController">
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-side-menus>
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-dark">
+                <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+            </ion-nav-bar>
+            <ion-nav-view name="menuContent" animation="slide-left-right">
+                <ion-content class="padding has-header">
+                   <ion-list>
+                       <div ng-repeat="item in items">
+                           <ion-item class="item-avatar orderInfo">
+                               <h2>药名</h2>
+                               <p>订单时间{{item.time}}</p>
+                           </ion-item>
+                           <ion-item class="item-body">
+                               <div class="col">
+                                   <img class="col-40" src="images/2927bf32-6714-4336-af72-c7f9b34f3c69.jpg">
+                               </div>
+                               <div class="col-60">
+                                   <p>药厂</p>
+                                   <p>经销商</p>
+                               </div>
+                           </ion-item>
+                       </div>
+
+                    </ion-list>
+                </ion-content>
+            </ion-nav-view>
+        </ion-side-menu-content>
+        <ion-side-menu side="right">
+            <header class="bar bar-header bar-dark">
+                <h1 class="title">分类</h1>
+            </header>
+            <ion-content class="has-header">
+                <ion-list>
+                    <ion-item nav-clear menu-close href="#">
+                        中
+                    </ion-item>
+                    <ion-item nav-clear menu-close href="#">
+                        西
+                    </ion-item>
+                    <ion-item nav-clear menu-close href="#">
+                        。
+                    </ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-side-menu>
+    </ion-side-menus>
+</ion-view>

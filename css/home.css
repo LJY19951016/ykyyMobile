@@ -1,0 +1,118 @@
+body{
+    font-family: "微软雅黑","-apple-system","Helvetica Neue",Roboto,"Segoe UI",sans-serif;
+    font-size: 14px;
+    color:#666;
+}
+.slider {
+    background: url("../images/banner.jpg") 0 0 no-repeat;
+    background-size: cover;
+    height:12rem;
+}
+.drugSlide{
+    background: #fff;
+    height:14rem;
+}
+.slider-slide {
+    color: #fff;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+.box{
+    height:100%;
+}
+.box h1{
+    position:relative; top:50%; transform:translateY(-50%);
+    color: #fff;
+}
+.col{
+    background-color: #F9FAFB;
+    padding: 5px;
+    border-radius: 2px;
+    text-align: center;
+}
+.row{
+    flex-wrap: wrap;
+}
+.itemBox{
+    margin-bottom: .6rem;
+    padding:0px;
+    border:none;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175) ;
+}
+.drugInfo{
+    text-align: left;
+    font-size:14px;
+    line-height: 30px;
+    color:#666;
+}
+.drugInfo div:first-child{
+    font-size: 20px;
+}
+.drugPrice{
+    line-height: 60px;
+    color: #ff3b30;
+    font-weight: bolder;
+}
+.bar.bar-dark .title {
+    font-weight: 200;
+    font-family: "微软雅黑";
+}
+.orderInfo{
+    padding-left: 16px;
+    margin-top: .4rem;
+}
+.confirmBtn{
+    text-align: right;
+}
+.item-body{
+    box-shadow: 0 6px 12px rgba(0,0,0,.175) ;
+}
+.plyBtn{
+    position: absolute;
+    bottom:49px;
+    z-index: 5;
+    width: 50%;
+    height: 49px;
+    line-height:49px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+}
+.plyBtn input{
+    display: inline-block;
+    border:1px solid #b2b2b2;
+    background-color: #fff;
+    color: #b2b2b2;
+    width: 20%;
+    text-align: center;
+    line-height: 49px;
+}
+.plyBtn .btn{
+    display: inline-block;
+    border:1px solid #b2b2b2;
+    background-color: #fff;
+    color: #b2b2b2;
+    height: 34px;
+    vertical-align: middle;
+    width: 16%;
+    font-size: 20px;
+}
+
+.ply{
+    position: absolute;
+    left:50%;
+    background-color: #ff3b30;
+    color: #fff;
+}
+.drugIntro p b{
+    display: inline-block;
+    width: 7rem;
+    text-align: right;
+    vertical-align: top;
+}
+.drugIntro p label{
+    display: inline-block;
+    width: 12rem;
+}
